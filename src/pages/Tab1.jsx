@@ -30,7 +30,7 @@ const Tab1 = () => {
 		setDetails(data);
     setShowCoctels(!showCoctels);
     setShowDetails(!showDetails);
-    setBack(!back)
+    setBack(!back);
 	}
 
   return (
@@ -41,9 +41,6 @@ const Tab1 = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        {back &&
-          <Button>Back</Button>
-        }
         <Grid container spacing={{ xs: 4, md: 1 }} direction="row"
           justifyContent="center"
           alignItems="center">
@@ -58,7 +55,12 @@ const Tab1 = () => {
           alignItems="center">
           {showDetails && details.drinks?.map(detail => (
             <Grid item xs={6} md={8}>
-              <CardDetail key={detail.idDrink} detail={detail} />
+              <CardDetail key={detail.idDrink}
+              setShowCoctels={setShowCoctels}
+              setShowDetails={setShowDetails}
+              detail={detail}
+              back={back}
+              setBack={setBack} />
             </Grid>
           ))}
         </Grid>

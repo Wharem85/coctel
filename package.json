@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.10.4",
     "@ionic/react": "^6.0.0",
     "@ionic/react-router": "^6.0.0",
+    "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.6",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^13.3.0",

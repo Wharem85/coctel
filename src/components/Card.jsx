@@ -5,7 +5,7 @@ import '../assets/styles/Card.css';
 const CardCoctel = ({coctel, getDetailsCoctel}) => {
 	return (
 		<div className="content-card">
-			<Card className="card">
+			<Card sx={{minWidth: 200, maxWidth: 400}} className="card">
 				<CardActionArea onClick={() => {
 						getDetailsCoctel(coctel.idDrink)
 					}}>

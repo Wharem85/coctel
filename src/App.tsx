@@ -10,9 +10,8 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { menu, book } from 'ionicons/icons';
+import { menu } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
 
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -36,9 +35,6 @@ const App: React.FC = () => (
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
-          </Route>
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
@@ -47,10 +43,6 @@ const App: React.FC = () => (
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={menu} />
             <IonLabel>Menu</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={book} />
-            <IonLabel>Detalles</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
