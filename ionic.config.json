@@ -1,0 +1,8 @@
+{
+  "name": "Coctel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "1c8058c1"
+}
