@@ -3,10 +3,10 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import Card from '../components/Card';
 import CardDetail from '../components/CardDetail';
 import axios from 'axios';
-import { Grid, Button } from "@mui/material";
+import { Grid } from "@mui/material";
 import '../assets/styles/Tab1.css';
 
-var url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=Cocktail_glass'
+var url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=Cocktail_glass';
 var urlDetail = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
 
 const Tab1 = () => {
